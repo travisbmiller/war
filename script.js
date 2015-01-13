@@ -101,10 +101,11 @@ $(document).ready(function() {
 		//compare the cards
 		//give the winner both cards (at end of deck)
 	var play = function(){
-		var card1 = cards_player_1[0];
-		var card2 = cards_player_2[0];
-		var play1card4 = cards_player_1[3];
-		var play2card4 = cards_player_2[3];
+		var card1 = cards_player_1[0]["number"];
+		var card2 = cards_player_2[0]["number"];
+		var play1card4 = cards_player_1[3]["number"];
+		var play2card4 = cards_player_2[3]["number"];
+
 
 		var winner = war(card1,card2); // card1 or card2 or false
 		//this function (defined below) will continue to the next turn
